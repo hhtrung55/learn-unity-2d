@@ -31,7 +31,7 @@ public class PlayerPosition : MonoBehaviour
         if (this.spawnTimer < this.spawnDelay) return;
         this.spawnTimer = 0;
         int index = this.minions.Count;
-        if (this.minions.Count >= 5) return;
+        if (this.minions.Count >= 2) return;
         GameObject minion = Instantiate(this.minionPrefab);
         minion.name = "Bom #" + ++minionId;
         minion.transform.position = transform.position;
